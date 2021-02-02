@@ -479,17 +479,17 @@
 <img class="-20210121111229457.png">
 
 <p>打开<strong>NAT设置</strong>和<strong>DHCP设置</strong></p>
-<p><img src="1/image-20210121111406894.png"><br><img src="1/image-20210121111449236.png"></p>
+<p><img src="/2021/02/01/1/image-20210121111406894.png"><br><img src="/2021/02/01/1/image-20210121111449236.png"></p>
 <p>红框中勾选的参数都需要记住。然后在CentOS 7 中打开终端，输入以下命令进入network-scripts文件夹</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /etc/sysconfig/network-scripts/</span><br></pre></td></tr></table></figure>
-<p><img src="1/image-20210121111952009.png"></p>
-<p>使用nano或者Vim编辑ifcfg-ens33 文件，即红框所示文件，这里需要使用root权限一次。<br><img src="1/image-20210121112438591.png"></p>
+<p><img src="/2021/02/01/1/image-20210121111952009.png"></p>
+<p>使用nano或者Vim编辑ifcfg-ens33 文件，即红框所示文件，这里需要使用root权限一次。<br><img src="/2021/02/01/1/image-20210121112438591.png"></p>
 <p>红框以下的都需要自己填写，我的是：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">IPADDR=192.168.159.201 (#此处的ip地址要在之前看到起始/结束ip地址范围内)</span><br><span class="line">GATEWAY=192.168.159.2 （#网关按之前看的配置配）</span><br><span class="line">NETMASK=255.255.255.0</span><br><span class="line">DNS1=8.8.8.8</span><br><span class="line">IPV6_PEERDNS=yes</span><br><span class="line">IPV6_PEERROUTES=yes</span><br><span class="line">IPV6_PRIVACY=no</span><br></pre></td></tr></table></figure>
 <p>然后ctrl+O保存，ctrl+X退出编辑，<strong>别忘了打开设置里面的开关</strong>！然后重启网络服务</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service network restart</span><br></pre></td></tr></table></figure>
 <p>会要求输入密码或者是使用root权限，此处需要授权允许。</p>
-<p>之后可以试着ping外网，通了就成功了，打开浏览器访问应该无异常了。<br><img src="1/image-20210121113406201.png"></p>
+<p>之后可以试着ping外网，通了就成功了，打开浏览器访问应该无异常了。<br><img src="/2021/02/01/1/image-20210121113406201.png"></p>
 
                 
             </div>

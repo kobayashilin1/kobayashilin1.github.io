@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, kobayashilin1的博客">
+    <meta name="keywords" content="BubbleSort, kobayashilin1的博客">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | kobayashilin1的博客</title>
+    <title>BubbleSort | kobayashilin1的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">BubbleSort</h1>
                 </div>
             </div>
         </div>
@@ -429,12 +429,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Java/">
+                                <span class="chip bg-color">Java</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Blog/" class="post-category">
+                                Blog
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -443,7 +456,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2021-02-02
+                    2021-03-04
                 </div>
                 
 
@@ -464,15 +477,23 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+                <h1 id="Array-和-Bubble-Sort"><a href="#Array-和-Bubble-Sort" class="headerlink" title="Array 和 Bubble Sort"></a>Array 和 Bubble Sort</h1><p>本文的主要目的是总结数组与冒泡排序法，以及其他一些数组处理方法的基本简单算法</p>
+<h2 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h2><p>Array，即数组，在Java中创建数组，先要声明，然后进行实例化，最后将元素进行赋值，如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Array</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">		<span class="keyword">int</span>[] array = <span class="keyword">null</span>;  </span><br><span class="line">        <span class="comment">//声明一个数组，但此时并未在堆中分配内存空间</span></span><br><span class="line">		array = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">9</span>];</span><br><span class="line">        <span class="comment">//创建一个数组，此时在堆中开辟内存空间，创建了int[] 对象</span></span><br><span class="line">		<span class="comment">//赋值</span></span><br><span class="line">		array[<span class="number">0</span>] = <span class="number">5</span>;</span><br><span class="line">		array[<span class="number">1</span>] = <span class="number">9</span>;</span><br><span class="line">		array[<span class="number">2</span>] = <span class="number">3</span>;</span><br><span class="line">		array[<span class="number">3</span>] = <span class="number">4</span>;</span><br><span class="line">		array[<span class="number">4</span>] = <span class="number">6</span>;</span><br><span class="line">		</span><br><span class="line">		<span class="comment">//使用for循环遍历数组</span></span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= array.length-<span class="number">1</span>; i++) &#123;</span><br><span class="line">			<span class="keyword">int</span> num;</span><br><span class="line">			num =array[i];</span><br><span class="line">			System.out.println(num);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Bubble-Sort"><a href="#Bubble-Sort" class="headerlink" title="Bubble Sort"></a>Bubble Sort</h2><p>即为冒泡排序，将原来乱序的数组重大到小排列一次的方法，具体原理为：先比较最右侧第i+1 个数字与第i个数字，若第i+1 个数字比第i 个数字大，则顺序不变，否则则交换顺序，然后比较第i-1 个与第i 个，重复上述操作，直至所有的元素从大到小排列。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//冒泡排序算法</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">BubbleSort</span></span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span>[] bubbleSort(<span class="keyword">int</span>[] arr)&#123;</span><br><span class="line">        <span class="keyword">int</span> temp = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.length-<span class="number">1</span>; i++)&#123;</span><br><span class="line">            <span class="keyword">int</span> flag = <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; arr.length-<span class="number">1</span>-i; j++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(arr[j] &gt; arr[j+<span class="number">1</span>])&#123;</span><br><span class="line">                    temp = arr[j];</span><br><span class="line">                    arr[j] = arr[j+<span class="number">1</span>];</span><br><span class="line">                    arr[j+<span class="number">1</span>] = temp;</span><br><span class="line">                    flag = <span class="number">1</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> arr;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="Reverse"><a href="#Reverse" class="headerlink" title="Reverse"></a>Reverse</h2><p>颠倒数组顺序：给定一个元素为int 的数组，将原数组颠倒，并返回颠倒后的数组</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//颠倒数组</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Reverse</span></span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span>[] reverse(<span class="keyword">int</span>[] arr) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.length/<span class="number">2</span>; i++) &#123;</span><br><span class="line">            <span class="keyword">int</span> temp = <span class="number">0</span>;</span><br><span class="line">            temp = arr[i];</span><br><span class="line">            arr[i] = arr[arr.length-<span class="number">1</span>-i];</span><br><span class="line">            arr[arr.length-<span class="number">1</span>-i] = temp;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> arr;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Array-Copy"><a href="#Array-Copy" class="headerlink" title="Array Copy"></a>Array Copy</h2><p>手写数组的拷贝方法，不调用内部方法：给定一个数组，对其进行拷贝</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//拷贝给定数组</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ArrayCopy</span></span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span>[] arrayCopy(<span class="keyword">int</span>[] arr)&#123;</span><br><span class="line">        <span class="keyword">int</span>[] b = <span class="keyword">null</span>;  </span><br><span class="line">        <span class="comment">//声明一个新数组在栈中，未实例化、未分配大小</span></span><br><span class="line">        b = <span class="keyword">new</span> <span class="keyword">int</span>[arr.length];  </span><br><span class="line">        <span class="comment">//堆中分配空间给新数组，空间大小与传入数组相同</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">            b[i] = arr[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> b;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Average"><a href="#Average" class="headerlink" title="Average"></a>Average</h2><p>传入一个数组，返回平均数</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//求数组的平均数</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Average</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">double</span> <span class="title">average</span><span class="params">(<span class="keyword">int</span>[] arr)</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">double</span> ave = <span class="number">0.0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.length; i++)&#123;</span><br><span class="line">            sum+=arr[i];</span><br><span class="line">            ave = sum / arr.length;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ave;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Biggest-Element"><a href="#Biggest-Element" class="headerlink" title="Biggest Element"></a>Biggest Element</h2><p>输出给定数组的最大元素</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//求数组最大元素</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">BiggestElement</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">biggestElement</span><span class="params">(<span class="keyword">int</span>[] arr)</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> max = arr[<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.length-<span class="number">1</span>; i++)&#123;</span><br><span class="line">            <span class="keyword">if</span> (arr[i+<span class="number">1</span>] &gt; arr[i])&#123;</span><br><span class="line">                max = arr[i+<span class="number">1</span>];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> max;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="数组的基本应用"><a href="#数组的基本应用" class="headerlink" title="数组的基本应用"></a>数组的基本应用</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Sort</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] array = &#123;<span class="number">1</span>, <span class="number">5</span>, <span class="number">2</span>, <span class="number">7</span>, <span class="number">4</span>&#125;;</span><br><span class="line">        <span class="keyword">int</span>[] sorted = BubbleSort.bubbleSort(array);</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> num : sorted)&#123;</span><br><span class="line">            System.out.printf(<span class="string">&quot;%d\t&quot;</span>, num);  </span><br><span class="line">            <span class="comment">//打印排序后数组的每个元素：1	2	4	5	7</span></span><br><span class="line">            System.out.println(java.util.Arrays.toString(sorted));  </span><br><span class="line">            <span class="comment">//直接打印排序后的数组： [1, 2, 4, 5, 7]</span></span><br><span class="line">            System.out.println(sorted);  </span><br><span class="line">            <span class="comment">//[I@1b6d3586  @左边表示是一个int类型的数组，@右边是内存的hash值，每编译运行一次，hash会变化；</span></span><br><span class="line">        &#125; </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">BubbleSort</span></span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span>[] bubbleSort(<span class="keyword">int</span>[] arr)&#123;  </span><br><span class="line">        <span class="comment">//传入一个整型数组，返回一个整型数组</span></span><br><span class="line">        <span class="keyword">int</span> temp = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.length-<span class="number">1</span>; i++)&#123;  </span><br><span class="line">            <span class="comment">//总共排序多少次</span></span><br><span class="line">            <span class="keyword">int</span> flag = <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; arr.length-<span class="number">1</span>-i; j++)&#123;  </span><br><span class="line">                <span class="comment">//每次排多少趟</span></span><br><span class="line">                <span class="comment">//相邻两数，下标大的更小，则两数交换，将大的数依次移到最后 小的数上浮，类似于“冒泡”</span></span><br><span class="line">                <span class="keyword">if</span>(arr[j] &gt; arr[j+<span class="number">1</span>])&#123;  </span><br><span class="line">                    temp = arr[j];</span><br><span class="line">                    arr[j] = arr[j+<span class="number">1</span>];</span><br><span class="line">                    arr[j+<span class="number">1</span>] = temp;</span><br><span class="line">                    flag = <span class="number">1</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> arr;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">QuickSort</span></span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//颠倒数组</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Reverse</span></span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span>[] reverse(<span class="keyword">int</span>[] arr) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.length/<span class="number">2</span>; i++)&#123;</span><br><span class="line">            <span class="keyword">int</span> temp = <span class="number">0</span>;</span><br><span class="line">            temp = arr[i];</span><br><span class="line">            arr[i] = arr[arr.length-<span class="number">1</span>-i];</span><br><span class="line">            arr[arr.length-<span class="number">1</span>-i] = temp;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> arr;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//拷贝数组</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ArrayCopy</span></span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span>[] arrayCopy(<span class="keyword">int</span>[] arr)&#123;</span><br><span class="line">        <span class="keyword">int</span>[] b = <span class="keyword">null</span>;</span><br><span class="line">        b = <span class="keyword">new</span> <span class="keyword">int</span>[arr.length];</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.length; i++)&#123;</span><br><span class="line">            b[i] = arr[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> b;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//数组的平均数</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Average</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">double</span> <span class="title">average</span><span class="params">(<span class="keyword">int</span>[] arr)</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">double</span> ave = <span class="number">0.0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.length; i++)&#123;</span><br><span class="line">            sum+=arr[i];</span><br><span class="line">            ave = sum / arr.length;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ave;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//数组的最大元素</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">BiggestElement</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">biggestElement</span><span class="params">(<span class="keyword">int</span>[] arr)</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> max = arr[<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.length-<span class="number">1</span>; i++)&#123;</span><br><span class="line">            <span class="keyword">if</span> (arr[i+<span class="number">1</span>] &gt; arr[i])&#123;</span><br><span class="line">                max = arr[i+<span class="number">1</span>];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> max;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="拷贝与起别名（坑点！）"><a href="#拷贝与起别名（坑点！）" class="headerlink" title="拷贝与起别名（坑点！）"></a>拷贝与起别名（坑点！）</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//别名</span></span><br><span class="line"><span class="keyword">int</span> a[] = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>&#125;;</span><br><span class="line"><span class="keyword">int</span> b[] = a;  </span><br><span class="line"><span class="comment">//b是数组a的别名</span></span><br><span class="line">b[<span class="number">2</span>] = <span class="number">10</span>;    </span><br><span class="line"><span class="comment">//该行代码会改变a[2]的值</span></span><br><span class="line"> </span><br><span class="line"><span class="comment">//拷贝</span></span><br><span class="line"><span class="keyword">int</span> a = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>&#125;;</span><br><span class="line"><span class="keyword">int</span> b[] = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">4</span>];   </span><br><span class="line"><span class="comment">//对数组b进行初始化</span></span><br><span class="line">b = a;    </span><br><span class="line"><span class="comment">//用数组a初始化数组b,此时数组b不是数组a的别名</span></span><br><span class="line">b[<span class="number">2</span>] = <span class="number">10</span>;   </span><br><span class="line"><span class="comment">//对b[2]赋值不会改变a[2]的值</span></span><br></pre></td></tr></table></figure>
 
                 
             </div>
@@ -499,7 +520,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://kobayashilin1.github.io/2021/02/02/hello-world/">https://kobayashilin1.github.io/2021/02/02/hello-world/</a>
+                    <a href="https://kobayashilin1.github.io/2021/03/04/BubbleSort/">https://kobayashilin1.github.io/2021/03/04/BubbleSort/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -536,7 +557,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
+                            
+                                <a href="/tags/Java/">
+                                    <span class="chip bg-color">Java</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -706,9 +731,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/2021/03/04/BubbleSort/">
                     <div class="card-image">
@@ -726,9 +752,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-03-04
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-04
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -741,6 +767,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -759,33 +786,29 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/02/01/1/">
+                <a href="/2021/02/02/hello-world/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="Windows10下VMware安装CentOS-7并使用NAT模式连接外网">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
                         
-                        <span class="card-title">Windows10下VMware安装CentOS-7并使用NAT模式连接外网</span>
+                        <span class="card-title">Hello World</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            CentOS-7安装踩坑
+                            
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-02
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Blog/" class="post-category">
-                                    Blog
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            yuzu
                             
                         </span>
                     </div>
